@@ -35,7 +35,7 @@ eth1      Link encap:Ethernet  HWaddr 02:56:47:E1:1C:AA
           RX bytes:291585 (284.7 KiB)  TX bytes:437119 (426.8 KiB)
 ```
 
-## Option 1 - Attach a physical inteface to namespace
+## Option 1 - Attach a physical interface to namespace
 In this option, we will create namespace and attach a physical interface to it. Please follow these steps:
 
 Create a namespace
@@ -74,7 +74,7 @@ sudo ip netns exec blue /usr/sbin/sshd
 With this setup, you should be able to ssh to 10.1.1.83, which will put you in the blue namespace.
 The configuration of network namesapces don't persist over reboots so it is important to have startup scripts that will do the above setup.
 
-## Option 2 - Use veth pair
+## Option 2 - Use veth pair with Linux bridge
 
 In the option 1, a physical interface is attached to a namespace which means it cannot be used in any other namesapce. If we need to share the same interface across multiple namespaces, we can use Linux bridges along with veth pair.
 
