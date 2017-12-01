@@ -62,13 +62,13 @@ sudo ip netns exec blue ip link set dev eth1 up
 ```
 
 Display the network configuration
-```
+```bash
 sudo ip netns exec blue ifconfig -a
 
 ```
 
 To ssh to the namesapce, you need to start the sshd within the namespace using the following command
-```
+```bash
 sudo ip netns exec blue /usr/sbin/sshd
 ```
 With this setup, you should be able to ssh to 10.1.1.83, which will put you in the blue namespace.
@@ -81,7 +81,7 @@ In the option 1, a physical interface is attached to a namespace which means it 
 ### Setup
 The Linux bridge needs to be configured on the interface that will be attached to a namespace. Please refer Linux documentation for configuring a bridge. The resulting setup should look like the following:
 
-```
+```bash
 ubuntu@ns1:~$ ifconfig -a
 br1       Link encap:Ethernet  HWaddr 02:95:dd:d6:43:56
           inet addr:10.1.1.51  Bcast:10.1.1.255  Mask:255.255.255.0
@@ -107,13 +107,14 @@ br1		8000.0295ddd64356	no		eth1
 ```
 Now, create veth pair and tie it with both br1 and a peer interface in the namespace
 
-```
+```bash
 sudo ip link add v-eth1 type veth peer name v-peer1
 sudo ip link set v-eth1 master br1
 sudo ip link set v-eth1 up
 ```
 Create namespace and attach v-peer1 to it.
-```
+
+```bash
 sudo ip netns add blue
 sudo ip link set v-peer1 netns blue
 sudo ip netns exec blue ip addr add 10.1.1.100/24 dev v-peer1
