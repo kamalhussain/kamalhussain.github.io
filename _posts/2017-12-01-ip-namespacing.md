@@ -10,10 +10,10 @@ Linux network namespaces allow creating isolated network stacks within a single 
 
 Two options were considered.
 * Attach a physical interface to a namespace
-* Use veth to connect host bridge to the namespace
+* Use a veth pair to connect host bridge to the namespace
 
 ## Setup
-AWS supports creating VMs with two interfaces. This requires creating two distinct subnets. When you launch a VM, there will be an option to configure two interfaces and attach correct subnets. The interfaces on the configured VM should look like the following:
+AWS supports creating VMs with two interfaces. This requires creating two distinct subnets. When you launch a VM, there will be an option to configure two interfaces and attach to correct subnets. The interfaces on the configured VM should look like the following:
 
 ```
 eth0      Link encap:Ethernet  HWaddr 02:28:6E:88:AB:02
@@ -122,7 +122,6 @@ sudo ip netns exec blue ip route add default via 10.1.1.51
 sudo ip netns exec blue ip link set lo up
 ```
 
-Just like in the previous step, you can start sshd in the newly created namespace. 
-
+Just like in the previous step, you can start sshd in the newly created namespace and connect to it.  
 
 
