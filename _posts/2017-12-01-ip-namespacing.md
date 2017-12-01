@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Using IP Namespaces"
-date:   2015-11-17 16:16:01 -0600
+date:   2017-12-01 11:44:00
 categories: Linux, IP
 permalink: /ip-namespaces/
 ---
