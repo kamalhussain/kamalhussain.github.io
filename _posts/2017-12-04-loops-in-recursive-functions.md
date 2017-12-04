@@ -66,9 +66,9 @@ returning 1
 returning 2 
 returning 5
 ```
-As you can see, the program enters the function with values 5, 4, 3, 2, and 1. As soon as it hits 1, the function is returns. The same is true for the value 0. Here the basecase of the recursive function is when the values 0 or 1 are passed in to the function. Another way to think about recursion is that it is top-down approach, where the higher level problem is broken into smaller sub problems. Every function call such as fib(5) is broken into sub problems of fib(4), fib(3), fib(2), fib(1) and fib(0).
+As you can see, the program enters the function with values 5, 4, 3, 2, and 1. As soon as it hits 1, the function returns. The same is true for the value 0. These are the basecases of the recursion. Another way to think about recursion is that it is top-down approach, where the higher level problem is broken into smaller sub problems. Every function call such as fib(5) is broken into sub problems of fib(4), fib(3), fib(2), fib(1) and fib(0).
 
-Fair enough. How about a problem where there are more complex sub problems? Let's look at the "Making change" problem that I found at [www.byte-by-byte.com](http://www.byte-by-byte.com/).
+Fair enough. How about a problem where there are more complex sub problems? Let's look at the "Making change" problem that is published at [www.byte-by-byte.com](http://www.byte-by-byte.com/).
 
 Here is the problem description (courtsey: bytebybyte): Given an integer representing a specific amount of change, write a function to compute the total number of coins required to make that amount of change. Example: Assume there is a coinset of  1, 4, 6 and the total amount is 8. You can reach the total amount by using two 1 coins and one 4 coin or using two 4 coins. The correct answer is the latter since it requires fewer number of coins.
 
@@ -86,12 +86,14 @@ def makeChange(x, coins):
                 min = c_min + 1
     return min
 ```
-The function can be called as makeChange(8, [1, 2, 4]). This function looks simple but there are two aspects that may throw you off. First, there is a variable called min defined inside the recursive function. Second, there is a for loop at every recursive step.
+The function can be invoked as makeChange(8, [1, 2, 4]). This function looks simple but there are two aspects that may throw you off. First, there is a variable called "min" defined inside the recursive function. Second, there is a for loop at every recursive step.
 
-Everytime the recursive function is called, the variable min is re-initialized to the value x. The key is understanding that the variable x is reassigned to c_min later in the program, which ultimately determines what is being returned from the function.
+Everytime, the recursive function is called, the variable min is re-initialized to the value x. The key is understanding that the variable x is reassigned to c_min later in the program, which ultimately determines what is being returned from the function.
 
 The for loop inside the recursion may be hard to visualize at the beginning. The simplest way to think about this abstraction is that at every stage the current problem is being broken in/branch out to as many sub problems as the number of coins. In this case, number of coin options turned out to be 3.
 
 Unlike the fibonacci example, this function breaks into three different branches at every step. The conditional statement inside the for loop makes sure that each branch terminates at certain point.
+
+Comparing and contrasting fibonacci and make change examples would help you understand different variations in recursion.
 
 
