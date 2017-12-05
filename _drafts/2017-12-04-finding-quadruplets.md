@@ -3,7 +3,7 @@ layout: post
 title:  "Finding quadralupets"
 date:   2017-12-04 11:44:00
 categories: programming
-permalink: /finding-quadralupets/
+permalink: /finding-quadruplets/
 ---
 
 Picking different combinations from an array of options is big part of life. Right? Let's do an interesting programming problem that does the exact same.
