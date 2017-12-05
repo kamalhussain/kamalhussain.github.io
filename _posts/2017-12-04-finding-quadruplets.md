@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Finding quadralupets"
+title:  "Finding quadruplets"
 date:   2017-12-04 11:44:00
 categories: programming
 permalink: /finding-quadruplets/
