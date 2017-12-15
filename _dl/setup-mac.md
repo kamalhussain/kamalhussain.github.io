@@ -46,7 +46,7 @@ command to check the path of Python.
 
 ### Step 2 - Verify SciPy libraries
 SciPy is a set of Python libraries used for scientific computing. These are the core
-pacakges:
+packages:
 
 * NumPy
 * SciPy
