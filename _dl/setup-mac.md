@@ -75,7 +75,7 @@ You can update invdividual packages such as scikit-learn using "conda update com
 > conda update scikit-learn
 ```
 
-### Step 3 - Instal Deep Learning libraries
+### Step 3 - Install Deep Learning libraries
 
 We need to install Keras with Tensorflow or Theano for Deep Learning. 
 
