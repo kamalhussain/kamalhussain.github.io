@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default
 title:  "Finding quadruplets"
 date:   2017-12-04 11:44:00
 categories: programming
