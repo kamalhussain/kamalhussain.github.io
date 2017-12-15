@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title:  "Using IP Namespaces"
 date:   2017-12-01 11:44:00
 categories: Linux, IP
