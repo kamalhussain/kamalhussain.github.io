@@ -13,7 +13,7 @@ At the basic level, deep learning solutions involve manipulating matrices. This 
 operations such as add, subtract, divide, multiply and transpose of matrices, for which 
 NumPy provides very simple interfaces. 
 
-### How to use NumPy
+### How to use NumPy?
 NumPy can be imported just like any Python library. 
 
 ```python
