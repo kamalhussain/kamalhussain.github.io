@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "NumPy for Deep Learning"
-date:   2017-12-15 11:44:00
+date:   2017-12-19 11:45:00
 ---
 
 ### What is Numpy?
