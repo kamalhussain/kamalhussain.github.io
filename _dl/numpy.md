@@ -151,7 +151,7 @@ matrix([[-1, -1],
 
 $$
 \begin{bmatrix}1 & 5\\\ 2 & 3\end{bmatrix}
-x
+\times
 \begin{bmatrix}2 & 6\\\ 3 & 4\end{bmatrix}
 =
 \begin{bmatrix}17 & 26\\\ 13 & 24\end{bmatrix}
