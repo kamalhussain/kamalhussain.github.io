@@ -4,7 +4,7 @@ title:  "NumPy for Deep Learning"
 date:   2017-12-19 11:45:00
 ---
 
-### What is Numpy?
+### What is NumPy?
 NumPy is a Python library that supports multi-dimensional arrays and matrices. Checkout 
 [this page](/setup-mac) for installing NumPy on your system.
 
