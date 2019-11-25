@@ -41,6 +41,7 @@ collections:
   aws:
     output: true
     permalink: /aws/:name
+    title: AWS
 
 #defaults:
 #  - scope:
