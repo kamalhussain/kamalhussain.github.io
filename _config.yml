@@ -34,14 +34,14 @@ permalink: /:title/
 collection_dir: my_collections
 
 collections:
-  dl:
-    output: true
-    permalink: /deeplearning/:name
-    title: Deep Learning
-  aws:
-    output: true
-    permalink: /aws/:name
-    title: AWS
+  - dl:
+      output: true
+      permalink: /deeplearning/:name
+      title: Deep Learning
+  - aws:
+      output: true
+      permalink: /aws/:name
+      title: AWS
 
 #defaults:
 #  - scope:
