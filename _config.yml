@@ -38,6 +38,9 @@ collections:
     output: true
     permalink: /deeplearning/:name
     title: Deep Learning
+  aws:
+    output: true
+    permalink: /aws/:name
 
 #defaults:
 #  - scope:
